@@ -35,7 +35,7 @@ package es.unileon.prg.tema5;
          char varChar ;
          boolean varBoolean;
           
-         varByte = 50;
+         varByte = 50; 
          varShort = 1500 ;
          varInt = 1500000 ;
          varLong = 65000000 ;
@@ -44,16 +44,14 @@ package es.unileon.prg.tema5;
          varChar = 'H' ;
          varBoolean = true ;
       
-         varInt    = varShort;
+         /* varInt    = varShort; Incorrecta */
          varDouble = varFloat;  
          varFloat  = varLong;
          varLong   = varInt;
          varLong   = 9223372036854775807L;
          varFloat  = varLong;
-         /* DESCOMENTAR
-         varByte   = varShort;
-         varShort  = varInt;
-         */
+         /* varByte   = varShort; Incorrecta */
+         /* varShort  = varInt; Incorrecta */
       
       }
    
@@ -75,6 +73,13 @@ package es.unileon.prg.tema5;
          long varLong;
       
          varLong=35000L;
+         varByte = (byte) varLong;
+         varShort = (short) varLong;
+         varInt = (int) varLong;
+
+         System.out.println("varByte: " + varByte);
+         System.out.println("varShort: " + varShort);
+         System.out.println("varInt: " + varInt);
       // Fin modificacion
       }
    
@@ -97,6 +102,18 @@ package es.unileon.prg.tema5;
          float varFloat;
          double varDouble;
          varFloat= 123.1f;
+
+         varByte = (byte) varFloat;
+         varShort = (short) varFloat;
+         varInt = (int) varFloat;
+         varLong = (long) varFloat;
+         varDouble = varFloat;
+
+         System.out.println("varByte: " + varByte);
+         System.out.println("varShort: " + varShort);
+         System.out.println("varInt: " + varInt);
+         System.out.println("varLong: " + varLong);
+         System.out.println("varDouble: " + varDouble);
         // Fin modificacion
       }
    
@@ -124,17 +141,15 @@ package es.unileon.prg.tema5;
          System.out.println("Normal : " + fNormal);    
          System.out.println("Minimo : " + fMinimo);
       
-         byte b = (byte)130;
-         short s = (short)32770;
-         int i = (int)2147483650l; 
+         byte b = (byte)126;
+         short s = (short)32767;
+         int i = (int)2147483646; 
       
          System.out.println("Byte  : " + b);    
          System.out.println("Short : " + s);    
          System.out.println("Int   : " + i);
       
-         /* DESCOMENTAR
-         float f = 1.3e22;   
-         System.out.println("f: " + f); 
-         */ 
+         float f = 1.3e22f;   
+         System.out.println("f: " + f);  
       }
    }
