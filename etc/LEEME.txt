@@ -9,8 +9,10 @@ Problemas surgidos al realizar la practica:
 Respuestas a la preguntas:
 
 En el ejercicio 4 del apartado 3.1.1
+El resultado da con muchos decimales ya que el tipo que se le ha asignado a la variable resultado es double
 
 En el ejercicio 5 del apartado 3.1.1
+En este ejercicio, al asignarle el tipo BigDecimal a las variables definidas, el resultado es exacto.
 
 En el ejercicio 4 del apartado 3.1.4 lo que hay mal son los datos que se le dan a byte, int y short
 ya que no caben en dichos tipos de datos.
