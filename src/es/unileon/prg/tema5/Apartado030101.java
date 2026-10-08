@@ -35,7 +35,7 @@ public class Apartado030101 extends Apartado {
 		long otroEntero = 1000L;
 		float decimal = 7.0f;
 		double otroDecimal = 7.0d;
-		byte enteroDe8Bits = 100;
+		byte enteroDe8Bits = 100;            
 		char caracter ='a';
 		char otroCaracter = 'a';
 		boolean booleano = true;

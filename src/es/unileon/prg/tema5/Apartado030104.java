@@ -141,9 +141,9 @@ package es.unileon.prg.tema5;
          System.out.println("Normal : " + fNormal);    
          System.out.println("Minimo : " + fMinimo);
       
-         byte b = (byte)126;
-         short s = (short)32767;
-         int i = (int)2147483646; 
+         byte b = (byte) 130;
+         short s = (short) 32770;
+         int i = (int)2147483650L; 
       
          System.out.println("Byte  : " + b);    
          System.out.println("Short : " + s);    

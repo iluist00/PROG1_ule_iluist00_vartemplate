@@ -68,7 +68,7 @@ public class Apartado030103 extends Apartado {
 		 cabecera("03", "Generar numeros aleatorios");
 
     // Inicio modificacion
-    double aleatorio = 5 + Math.random() * (10 - 5);
+    double aleatorio = 5 + Math.random() * (5);
     System.out.println("Número aleatorio entre 5 y 10: " + aleatorio);
 		// Fin modificacion
 	}
