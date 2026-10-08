@@ -2,7 +2,7 @@ Practica P-VAR
 
 Alumno: Izan Luis Tascón
 
-Horas dedicadas: 
+Horas dedicadas: 5
 
 Problemas surgidos al realizar la practica:
 
