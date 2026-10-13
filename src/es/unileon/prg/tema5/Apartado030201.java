@@ -38,7 +38,7 @@ package es.unileon.prg.tema5;
          System.out.println("Número de caracteres: " + longitud);
          System.out.println("Posición intermedia: " + posicionIntermedia);
          System.out.println("Carácter en la posición intermedia: " + caracterIntermedio);
-         System.out.println("Código que lo representa: " + (int) caracterIntermedio);;
+         System.out.println("Código que lo representa: " + (int) caracterIntermedio);
         // Inicio modificacion
         // Fin modificacion
       }
@@ -57,10 +57,10 @@ package es.unileon.prg.tema5;
          cabecera("02", "");
          String cadena = "Viaje al Parnaso";
          String otraCadena = "ViAje al pArnaso";
-         System.out.println("¿Son iguales?: " + cadena.equals(otraCadena));
-         System.out.println("¿Iguales (sin importar mayús/minús)?: " + cadena.equalsIgnoreCase(otraCadena));
-         System.out.println("¿Iguales en minúsculas?: " + cadena.toLowerCase().equals(otraCadena.toLowerCase()));
       // Inicio modificacion
+      System.out.println("¿Son iguales?: " + cadena.equals(otraCadena));
+      System.out.println("¿Iguales (sin importar mayús/minús)?: " + cadena.equalsIgnoreCase(otraCadena));
+      System.out.println("¿Iguales en minúsculas?: " + cadena.toLowerCase().equals(otraCadena.toLowerCase()));
       // Fin modificacion
       }
    
