@@ -18,3 +18,18 @@ En el ejercicio 4 del apartado 3.1.4
 El 130 sobrepasa el bit reservado del tipo byte y se convierte en negativo
 En el short sale negativo porque el número asignado no cabe
 En el int ocurre lo mismo.
+
+ejercicio 1 apartado 3.2.2
+length() devuelve el número de caracteres que contiene realmente el StringBuffer. 
+capacity() devuelve el tamaño del buffer interno reservado, es decir, cuántos caracteres puede almacenar antes de tener que reasignar memoria. 
+Siempre se cumple capacity() >= length(). 
+En este caso, length() es 16 y capacity() es 32, porque al crear un StringBuffer a partir de un String la capacidad inicial es la longitud del String + 16.
+
+ejercicio 1 apartado 3.2.3
+System.out.println() solo sabe imprimir tipos primitivos y cadenas. Cuando se le pasa un objeto, llama internamente al método toString() 
+de ese objeto y muestra la cadena que devuelve. Todas las clases heredan de Object, cuyo toString() por defecto devuelve el 
+nombre completo de la clase, el carácter @ y el código hash del objeto en hexadecimal (por eso la primera ejecución 
+muestra algo ilegible como Alumno@1b6d3586). Al descomentar el método toString() de Alumno, estamos sobrescribiendo (override) 
+el método heredado de Object, de modo que println(alumno) ejecuta nuestra versión y muestra la información del alumno de forma 
+legible. Los valores 5, 10.5 y "Cadena de caracteres" se muestran igual en ambos casos porque son tipos primitivos 
+y un String, que no dependen de toString() de nuestra clase.

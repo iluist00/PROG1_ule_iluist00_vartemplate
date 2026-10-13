@@ -31,6 +31,14 @@ package es.unileon.prg.tema5;
        public void ejercicio01() {
          cabecera("01","");
          String cadena = "En un lugar de la Mancha";
+         int longitud = cadena.length();
+         int posicionIntermedia = longitud / 2;
+         char caracterIntermedio = cadena.charAt(posicionIntermedia);
+
+         System.out.println("Número de caracteres: " + longitud);
+         System.out.println("Posición intermedia: " + posicionIntermedia);
+         System.out.println("Carácter en la posición intermedia: " + caracterIntermedio);
+         System.out.println("Código que lo representa: " + (int) caracterIntermedio);;
         // Inicio modificacion
         // Fin modificacion
       }
@@ -49,6 +57,9 @@ package es.unileon.prg.tema5;
          cabecera("02", "");
          String cadena = "Viaje al Parnaso";
          String otraCadena = "ViAje al pArnaso";
+         System.out.println("¿Son iguales?: " + cadena.equals(otraCadena));
+         System.out.println("¿Iguales (sin importar mayús/minús)?: " + cadena.equalsIgnoreCase(otraCadena));
+         System.out.println("¿Iguales en minúsculas?: " + cadena.toLowerCase().equals(otraCadena.toLowerCase()));
       // Inicio modificacion
       // Fin modificacion
       }
@@ -68,6 +79,11 @@ package es.unileon.prg.tema5;
          String cadena = "Viaje al Parnaso";
          String otraCadena = "Persiles y Segismunda";
       // Inicio modificacion
+         String concatenacion1 = cadena + " " + otraCadena;
+          String concatenacion2 = cadena.concat(" ").concat(otraCadena);
+   
+          System.out.println("Concatenación usando '+': " + concatenacion1);
+          System.out.println("Concatenación usando 'concat': " + concatenacion2);
         // Fin modificacion
       }
    
@@ -85,6 +101,11 @@ package es.unileon.prg.tema5;
          cabecera("04", "");
          String cadena = "Viaje al Parnaso";
         // Inicio modificacion
+         boolean terminaConParnaso = cadena.endsWith("Parnaso");
+          boolean empiezaConViaje = cadena.startsWith("Viaje");
+    
+          System.out.println("¿Termina con 'Parnaso'?: " + terminaConParnaso);
+          System.out.println("¿Empieza con 'Viaje'?: " + empiezaConViaje);
         // Fin modificacion
       }
    
@@ -103,6 +124,10 @@ package es.unileon.prg.tema5;
          cabecera("05","");
          String cadena = "Viaje al Parnaso";
       // Inicio modificacion
+      System.out.println("Posición del carácter 'p': " + cadena.indexOf('p'));
+      System.out.println("Posición de la cadena 'Par': " + cadena.indexOf("Par"));
+      System.out.println("Última ocurrencia de 'a': " + cadena.lastIndexOf('a'));
+      System.out.println("Posición de 'a' desde la posición 3: " + cadena.indexOf('a', 3));
         // Fin modificacion  
       }
    
@@ -120,7 +145,12 @@ package es.unileon.prg.tema5;
       
          String cadena = "Viaje al Parnaso";
       // Inicio modificacion
-      // Fin modificacion
+      String reemplazoLetra = cadena.replace('a', '*');
+         String reemplazoPalabra = cadena.replace("Parnaso", "Olimpo");
+   
+         System.out.println("Reemplazo de 'a' por '*': " + reemplazoLetra);
+         System.out.println("Reemplazo de 'Parnaso' por 'Olimpo': " + reemplazoPalabra);
+        // Fin modificacion
       }
    
    /**
@@ -136,6 +166,9 @@ package es.unileon.prg.tema5;
          cabecera("07", "");
          String cadena = "Viaje al Parnaso";
       // Inicio modificacion
+      System.out.println("Subcadena desde la mitad: " + cadena.substring(cadena.length() / 2));
+   System.out.println("Subcadena entre 'j' y 's': " + cadena.substring(cadena.indexOf('j'), cadena.indexOf('s')));
+// Fin modificacion
         // Fin modificacion
       }
    
@@ -150,6 +183,7 @@ package es.unileon.prg.tema5;
          cabecera("08", "");
          String cadena = " La Galatea   ";
       // Inicio modificacion
+      System.out.println("Cadena sin espacios: '" + cadena.trim() + "'");
         // Fin modificacion
       }
    
@@ -166,6 +200,13 @@ package es.unileon.prg.tema5;
          boolean expresion = true;
          long enteroGrande = 1231231L;
       // Inicio modificacion
+         String numeroStr = String.valueOf(numero);
+         String expresionStr = String.valueOf(expresion);
+         String enteroGrandeStr = String.valueOf(enteroGrande);
+
+         System.out.println("Número como String: " + numeroStr);
+         System.out.println("Expresión como String: " + expresionStr);
+         System.out.println("Entero grande como String: " + enteroGrandeStr);
         // Fin modificacion
       }
    
@@ -181,6 +222,7 @@ package es.unileon.prg.tema5;
          String cadena = "Viaje al Parnaso";
          String otraCadena = "Viaje al Olimpo";
       // Inicio modificacion
+      System.out.println("Comparación lexicográfica: " + cadena.compareTo(otraCadena));
         // Fin modificacion
       }
    }
