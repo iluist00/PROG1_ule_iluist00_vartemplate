@@ -78,10 +78,9 @@ package es.unileon.prg.tema5;
       
          String cadena = "Viaje al Parnaso";
          String otraCadena = "Persiles y Segismunda";
-      // Inicio modificacion
          String concatenacion1 = cadena + " " + otraCadena;
-          String concatenacion2 = cadena.concat(" ").concat(otraCadena);
-   
+         String concatenacion2 = cadena.concat(" ").concat(otraCadena);
+      // Inicio modificacion
           System.out.println("Concatenación usando '+': " + concatenacion1);
           System.out.println("Concatenación usando 'concat': " + concatenacion2);
         // Fin modificacion
