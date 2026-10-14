@@ -81,7 +81,6 @@ package es.unileon.prg.tema5;
       
          StringBuffer cadena=new StringBuffer("Viaje al Parnaso");
       // Modificaciones
-      // Modificaciones
          cadena.replace(9, 16, "Castalia");   // sustituye "Parnaso" (posiciones 9 a 15)
          cadena.deleteCharAt(cadena.indexOf("l"));   // borra la primera 'l'
          System.out.println(cadena.toString());
@@ -116,10 +115,9 @@ package es.unileon.prg.tema5;
       
      	StringBuffer cadena=new StringBuffer("Viaje al Parnaso");
 		String otraCadena=new String("Viaje desde Arcadia");
-		//modificaciones
 
       //modificaciones
-      cadena.insert(5, otraCadena.substring(5));  // inserta " desde Arcadia" tras "Viaje"
+      cadena.insert(5, otraCadena.substring(5));  // inserta " desde Arcadia" tras "Viaje
       cadena.setCharAt(0, 'v');                   // pasa la V inicial a minúscula
       System.out.println(cadena);
       }
